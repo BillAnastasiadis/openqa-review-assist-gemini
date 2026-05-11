@@ -4,55 +4,55 @@
 
 [[rule]]
 toolName = "run_shell_command"
-commandPrefix = "python3 fetch_job_data.py"
+commandPrefix = "python3 scripts/fetch_job_data.py"
 decision = "allow"
 priority = 100
 
 [[rule]]
 toolName = "run_shell_command"
-commandPrefix = "python3 trace_functions.py"
+commandPrefix = "python3 scripts/trace_functions.py"
 decision = "allow"
 priority = 100
 
 [[rule]]
 toolName = "run_shell_command"
-commandPrefix = "python3 analyze_logs.py"
+commandPrefix = "python3 scripts/analyze_logs.py"
 decision = "allow"
 priority = 100
 
 [[rule]]
 toolName = "run_shell_command"
-commandPrefix = "python3 query_history.py"
+commandPrefix = "python3 scripts/query_history.py"
 decision = "allow"
 priority = 100
 
 [[rule]]
 toolName = "run_shell_command"
-commandPrefix = "python3 fetch_historical_packages.py"
+commandPrefix = "python3 scripts/fetch_historical_packages.py"
 decision = "allow"
 priority = 100
 
 [[rule]]
 toolName = "run_shell_command"
-commandPrefix = "python3 fetch_historical_bugrefs.py"
+commandPrefix = "python3 scripts/fetch_historical_bugrefs.py"
 decision = "allow"
 priority = 100
 
 [[rule]]
 toolName = "run_shell_command"
-commandPrefix = "python3 compare_commits.py"
+commandPrefix = "python3 scripts/compare_commits.py"
 decision = "allow"
 priority = 100
 
 [[rule]]
 toolName = "run_shell_command"
-commandPrefix = "python3 osado_lib.py"
+commandPrefix = "python3 scripts/osado_lib.py"
 decision = "allow"
 priority = 100
 
 [[rule]]
 toolName = "run_shell_command"
-commandPrefix = "python3 check_pkg_versions.py"
+commandPrefix = "python3 scripts/check_pkg_versions.py"
 decision = "allow"
 priority = 100
 

@@ -17,7 +17,8 @@ def get_github_token():
     if token:
         return token
         
-    creds_path = os.path.join("credentials", "creds.conf")
+    PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+    creds_path = os.path.join(PROJECT_ROOT, "credentials", "creds.conf")
     if os.path.exists(creds_path):
         try:
             with open(creds_path, 'r') as f:

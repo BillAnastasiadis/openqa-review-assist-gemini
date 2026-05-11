@@ -49,7 +49,7 @@ def analyze_similar_failures(job_id, failing_module, test_name, current_incident
         try:
             incident_jobs = requests.get(
                 f"{OPENQA_BASE_URL}/api/v1/jobs", 
-                params={"test": test_name, "INCIDENT_ID": current_incident, "limit": 100},
+                params={"test": test_name, "job_setting": f"INCIDENT_ID={current_incident}", "limit": 100},
                 verify=False, timeout=API_TIMEOUT
             ).json().get('jobs', [])
         except Exception:
